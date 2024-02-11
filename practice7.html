@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>My document</title>
+<style>
+#Home{grid-area:Home;}
+    #Link{grid-area:link;}
+    #Address{grid-area:address;}
+    #About{grid-area:area;}
+    #Task{grid-area:task;}
+    #maindiv{
+        display: grid;
+        grid-template-areas: "Home Home Home Home Home Home"
+        "link link link address address address"
+        "area area area task task task";
+        padding: 20px;
+        background-image: url("img3.jpg");
+        margin: 20px;
+        
+        
+    }
+    #maindiv> div{
+          background-color: blueviolet;
+          padding:20px;
+          border-radius: 20px;
+          margin: 20px;
+          color:yellow ;
+          text-align: center;
+          font-family: fantasy;
+          font-size:55px ;
+
+    
+    }
+    
+
+</style>
+
+</head>    
+<body>
+    <!--Grid box -it is a two dimension(is a combination of rows and columns)-->
+    <div id="maindiv">
+        <div id="Home" >Details</div>
+        <div id="Link">Website</div>
+        <div id="Address">Contactus</div>
+        <div id="About">Visit us</div>
+        <div id="Task" >Work done</div>
+    </div>
+</body>
+</html>
